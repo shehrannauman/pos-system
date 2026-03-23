@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDS - Kitchen Display System</title>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Add Media Queries for Mobile/Tablets -->
+  <style>
+    @media (max-width: 900px) {
+      .sidebar {
+        width: 120px;
+      }
+      .order-panel {
+        width: 220px;
+      }
+      .orders {
+        grid-template-columns: auto-fill, minmax(120px, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .sidebar {
+        width: 100px;
+      }
+      .order-panel {
+        width: 180px;
+      }
+      .orders {
+        grid-template-columns: auto-fill, minmax(90px, 1fr);
+      }
+    }
+
+    /* Touch-friendly buttons */
+    button, .accept-btn, .ready-btn {
+      touch-action: manipulation; /* Prevents zoom and scroll during touch */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your Kitchen Display content goes here -->
+  <div class="orders">
+    <!-- Live order status goes here -->
+  </div>
+
+  <div class="order-panel">
+    <!-- Order status panel (Preparing / Ready) -->
+  </div>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

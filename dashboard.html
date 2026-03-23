@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sales Analytics</title>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Add Media Queries for Mobile/Tablets -->
+  <style>
+    @media (max-width: 900px) {
+      .sidebar {
+        width: 120px;
+      }
+      .stats {
+        grid-template-columns: auto-fill, minmax(120px, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .sidebar {
+        width: 100px;
+      }
+      .stats {
+        grid-template-columns: auto-fill, minmax(90px, 1fr);
+      }
+    }
+
+    /* Touch-friendly buttons */
+    button, .refresh-btn {
+      touch-action: manipulation; /* Prevents zoom and scroll during touch */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sales Dashboard content goes here -->
+  <div class="stats">
+    <!-- Sales charts and stats -->
+  </div>
+
+  <div class="sidebar">
+    <!-- Sidebar for navigation -->
+  </div>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

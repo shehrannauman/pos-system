@@ -1,0 +1,21 @@
+{
+  "short_name": "LithosPOS",
+  "name": "Lithos Restaurant POS System",
+  "description": "A simple, efficient restaurant POS system.",
+  "start_url": "./pos.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#ff6600",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
